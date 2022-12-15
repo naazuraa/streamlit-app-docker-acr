@@ -15,13 +15,14 @@ Test app for Streamlit deployment using Docker on Azure Container Registry and A
 
 ## Step 1: Ensure all required files are in the same directory
 
-Ensure you have have these three files
+Ensure you have have these four files
 
 1. Python file that contains your streamlit code
 2. Dockerfile that containes configuration 
 3. YML file for your docker compose instruction
+4. Requirements.txt for lists of library needed for your Python script
 
-Below are sample code to have in these three files
+Below are sample code to have in the files
 
 ### main.py
 ```
@@ -69,6 +70,12 @@ services:
     ports:
       - "8081:8501"
   ```
+### requirements.txt
+```
+streamlit==1.11.1
+azure-core
+```
+
   
 ## Step 2: Build image and push to Azure Container Registry
 
