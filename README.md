@@ -24,7 +24,7 @@ Ensure you have have these four files
 
 Below are sample code to have in the files
 
-### main.py
+### app.py
 ```
 import streamlit as st
 import pandas as pd
@@ -74,6 +74,7 @@ services:
 ```
 streamlit==1.11.1
 azure-core
+pandas
 ```
 
   
