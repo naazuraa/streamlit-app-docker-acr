@@ -28,7 +28,6 @@ Below are sample code to have in the files
 ```
 import streamlit as st
 import pandas as pd
-import numpy as np
 
 st.title("Streamlit Test App")
 st.markdown("This is an app to try out deployment on Azure using Docker")
